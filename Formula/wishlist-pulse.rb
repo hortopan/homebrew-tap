@@ -5,21 +5,21 @@ class WishlistPulse < Formula
   if OS.mac?
     if Hardware::CPU.arm?
       url "https://github.com/hortopan/steam-wishlist-pulse/releases/download/v0.1.2/wishlist-pulse-aarch64-apple-darwin.tar.xz"
-      sha256 "538d36f45cd4a83ea512d265a638037aa56654484ed6662b4f1aa46b760932e1"
+      sha256 "e6272ca6c1419a1388174433b93c78c3449bc4cf69c33dccf9251636ba9859d2"
     end
     if Hardware::CPU.intel?
       url "https://github.com/hortopan/steam-wishlist-pulse/releases/download/v0.1.2/wishlist-pulse-x86_64-apple-darwin.tar.xz"
-      sha256 "f8c9313cf8011639b14291dd25f25ec0a88cfcd404c04460ddbe65307a627f6e"
+      sha256 "aec0516a5a5161d93c8e1aa45f121ec1f8713e8ff4f20b195dd0b17b93043a88"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
       url "https://github.com/hortopan/steam-wishlist-pulse/releases/download/v0.1.2/wishlist-pulse-aarch64-unknown-linux-musl.tar.xz"
-      sha256 "a4a947e974b8f6bb2a33312c0e5d799969fdf083ed4393252c8eb3f69db5d687"
+      sha256 "eb3636236055f30511e519133f9cf55f780b0ce012fb85e705e5154a0336de43"
     end
     if Hardware::CPU.intel?
       url "https://github.com/hortopan/steam-wishlist-pulse/releases/download/v0.1.2/wishlist-pulse-x86_64-unknown-linux-musl.tar.xz"
-      sha256 "50641ad72e1fa26cdb1d15642ea48905d12d794b1d1e070e6ba243f3611229ce"
+      sha256 "3dd709f9080ad0cb94c5f08fb2c544f7c2aed40172030c932121bb864bfc2d4b"
     end
   end
 
