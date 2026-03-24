@@ -7,10 +7,10 @@ class Envz < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/hortopan/envz/releases/download/v0.1.0/envz-aarch64-apple-darwin.tar.gz"
-      sha256 "3a97e724dca1ff072867e371c4519f0baf1cef337cefc4623222809f591637eb"
+      sha256 "b5dbf206953f211b9bcf3d11d42c21eb56392f02c6f10402827e61cc0512b39f"
     else
       url "https://github.com/hortopan/envz/releases/download/v0.1.0/envz-x86_64-apple-darwin.tar.gz"
-      sha256 "9daa27bd400ea1df973374a48ac28b7fa41d197f6c07eeb4deb96e0e2a073589"
+      sha256 "fd93ab8ab39f9e8758033276223d3e043b269442556f16e03c7b379977ca78c8"
     end
   end
 
