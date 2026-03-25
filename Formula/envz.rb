@@ -1,16 +1,16 @@
 class Envz < Formula
   desc "Secure environment variable management with AES-256-GCM encryption and macOS Keychain"
   homepage "https://github.com/hortopan/envz"
-  version "0.1.0"
+  version "0.1.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/hortopan/envz/releases/download/v0.1.0/envz-aarch64-apple-darwin.tar.gz"
-      sha256 "b5dbf206953f211b9bcf3d11d42c21eb56392f02c6f10402827e61cc0512b39f"
+      url "https://github.com/hortopan/envz/releases/download/v0.1.1/envz-aarch64-apple-darwin.tar.gz"
+      sha256 "6f6ae532e22a6e926bb28f0f3ca5eb3bf72a4f668378d628276aa58e65e24a9f"
     else
-      url "https://github.com/hortopan/envz/releases/download/v0.1.0/envz-x86_64-apple-darwin.tar.gz"
-      sha256 "fd93ab8ab39f9e8758033276223d3e043b269442556f16e03c7b379977ca78c8"
+      url "https://github.com/hortopan/envz/releases/download/v0.1.1/envz-x86_64-apple-darwin.tar.gz"
+      sha256 "aa458aa6b301609d926b7a5db553520c01b9e24b27a36929b14cf65ee3927efd"
     end
   end
 
