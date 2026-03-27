@@ -1,25 +1,25 @@
 class WishlistPulse < Formula
   desc "Steam Wishlist monitoring bot with web dashboard, Telegram and Discord notifications"
   homepage "https://github.com/hortopan/steam-wishlist-pulse"
-  version "0.1.8"
+  version "0.1.9"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/hortopan/steam-wishlist-pulse/releases/download/v0.1.8/wishlist-pulse-aarch64-apple-darwin.tar.xz"
-      sha256 "05f8edef3126e4d6ef4b350f8a2bee8e8607c74423c6563a00f1a183812c7b1d"
+      url "https://github.com/hortopan/steam-wishlist-pulse/releases/download/v0.1.9/wishlist-pulse-aarch64-apple-darwin.tar.xz"
+      sha256 "c4467adca1a791e147017849029cc6bf4b6e1223015350050b18167fbe670a62"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/hortopan/steam-wishlist-pulse/releases/download/v0.1.8/wishlist-pulse-x86_64-apple-darwin.tar.xz"
-      sha256 "dfb942c3ba89e4776e896d109ca43cd78ea00b838297b5cef812e9442e6fb948"
+      url "https://github.com/hortopan/steam-wishlist-pulse/releases/download/v0.1.9/wishlist-pulse-x86_64-apple-darwin.tar.xz"
+      sha256 "80e31e9a809dea43dd4c686d9ea0912303b0349574fea83231617f77156aed66"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/hortopan/steam-wishlist-pulse/releases/download/v0.1.8/wishlist-pulse-aarch64-unknown-linux-musl.tar.xz"
-      sha256 "6a817cf295559244b7db8f04c87768139257c7b206ead2b2c2531a3343baabd7"
+      url "https://github.com/hortopan/steam-wishlist-pulse/releases/download/v0.1.9/wishlist-pulse-aarch64-unknown-linux-musl.tar.xz"
+      sha256 "0b3ff844af3989ad16f718abf487ce53f900b665920cec897531712dd2f874c4"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/hortopan/steam-wishlist-pulse/releases/download/v0.1.8/wishlist-pulse-x86_64-unknown-linux-musl.tar.xz"
-      sha256 "1ea006799867195a52a9a38054ec8f1dfa342f184c58599b2069432340aca28a"
+      url "https://github.com/hortopan/steam-wishlist-pulse/releases/download/v0.1.9/wishlist-pulse-x86_64-unknown-linux-musl.tar.xz"
+      sha256 "bb93ace0d410ee00dba741804ea40fabd159c5984a0bad71d8839218396d5eb1"
     end
   end
 
