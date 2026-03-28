@@ -1,25 +1,25 @@
 class WishlistPulse < Formula
   desc "Steam Wishlist monitoring bot with web dashboard, Telegram and Discord notifications"
   homepage "https://github.com/hortopan/steam-wishlist-pulse"
-  version "0.1.9"
+  version "0.1.10"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/hortopan/steam-wishlist-pulse/releases/download/v0.1.9/wishlist-pulse-aarch64-apple-darwin.tar.xz"
-      sha256 "c4467adca1a791e147017849029cc6bf4b6e1223015350050b18167fbe670a62"
+      url "https://github.com/hortopan/steam-wishlist-pulse/releases/download/v0.1.10/wishlist-pulse-aarch64-apple-darwin.tar.xz"
+      sha256 "3bb0dba3136918ffd9a8e8285c737fe94b8271c89b93a3332a10203600a913ff"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/hortopan/steam-wishlist-pulse/releases/download/v0.1.9/wishlist-pulse-x86_64-apple-darwin.tar.xz"
-      sha256 "80e31e9a809dea43dd4c686d9ea0912303b0349574fea83231617f77156aed66"
+      url "https://github.com/hortopan/steam-wishlist-pulse/releases/download/v0.1.10/wishlist-pulse-x86_64-apple-darwin.tar.xz"
+      sha256 "ed8dfe15e7eb461b577ac4d830223bbcce464e879767e9bdb9c2f833923f0490"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/hortopan/steam-wishlist-pulse/releases/download/v0.1.9/wishlist-pulse-aarch64-unknown-linux-musl.tar.xz"
-      sha256 "0b3ff844af3989ad16f718abf487ce53f900b665920cec897531712dd2f874c4"
+      url "https://github.com/hortopan/steam-wishlist-pulse/releases/download/v0.1.10/wishlist-pulse-aarch64-unknown-linux-musl.tar.xz"
+      sha256 "d348c22631ffc28bf14563b07a10bb04a3795855f31e573d8a9dbcfb968d544a"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/hortopan/steam-wishlist-pulse/releases/download/v0.1.9/wishlist-pulse-x86_64-unknown-linux-musl.tar.xz"
-      sha256 "bb93ace0d410ee00dba741804ea40fabd159c5984a0bad71d8839218396d5eb1"
+      url "https://github.com/hortopan/steam-wishlist-pulse/releases/download/v0.1.10/wishlist-pulse-x86_64-unknown-linux-musl.tar.xz"
+      sha256 "b478011a24bb3e752cdd128939bdaab0079b26e1928ad028c1c9bab78dd3c174"
     end
   end
 
