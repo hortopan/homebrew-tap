@@ -1,25 +1,25 @@
 class WishlistPulse < Formula
   desc "Steam Wishlist monitoring bot with web dashboard, Telegram and Discord notifications"
   homepage "https://github.com/hortopan/steam-wishlist-pulse"
-  version "0.1.14"
+  version "0.1.15"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/hortopan/steam-wishlist-pulse/releases/download/v0.1.14/wishlist-pulse-aarch64-apple-darwin.tar.xz"
-      sha256 "510b04dc2497e0a307116fb656006db5433fe9276a7f2570e27ce06f62453a10"
+      url "https://github.com/hortopan/steam-wishlist-pulse/releases/download/v0.1.15/wishlist-pulse-aarch64-apple-darwin.tar.xz"
+      sha256 "c4df9487ea62dcc1dec53d316dbf38185ba21b150e26ba3b6816dd717d4f4cb7"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/hortopan/steam-wishlist-pulse/releases/download/v0.1.14/wishlist-pulse-x86_64-apple-darwin.tar.xz"
-      sha256 "db7bc8d15830661cc68959cd70f1a1a8d136e5ac341a8d6654bacf47abac20ed"
+      url "https://github.com/hortopan/steam-wishlist-pulse/releases/download/v0.1.15/wishlist-pulse-x86_64-apple-darwin.tar.xz"
+      sha256 "511cfb956df4dc6db1d24d4114d79ac89ef2efc4f4c66ab7582ee63a49b509f4"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/hortopan/steam-wishlist-pulse/releases/download/v0.1.14/wishlist-pulse-aarch64-unknown-linux-musl.tar.xz"
-      sha256 "0ca5e2b886e1609abe131d4a8170d485bc75eaa2bf59067b344e8e964e090527"
+      url "https://github.com/hortopan/steam-wishlist-pulse/releases/download/v0.1.15/wishlist-pulse-aarch64-unknown-linux-musl.tar.xz"
+      sha256 "16e26e209c1e52766dafa22b6e30ab19e736905713b2dbfc9b6fd1d8923dc2cc"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/hortopan/steam-wishlist-pulse/releases/download/v0.1.14/wishlist-pulse-x86_64-unknown-linux-musl.tar.xz"
-      sha256 "3894555481928355ce99f98d259a96b5e4fabff5538398ecc59835a30d9d9913"
+      url "https://github.com/hortopan/steam-wishlist-pulse/releases/download/v0.1.15/wishlist-pulse-x86_64-unknown-linux-musl.tar.xz"
+      sha256 "155bdd4ccb53ffe25f41f223261e1955f8a833f102418ca4e020393b6b8787a3"
     end
   end
 
@@ -51,10 +51,18 @@ class WishlistPulse < Formula
   end
 
   def install
-    bin.install "wishlist-pulse" if OS.mac? && Hardware::CPU.arm?
-    bin.install "wishlist-pulse" if OS.mac? && Hardware::CPU.intel?
-    bin.install "wishlist-pulse" if OS.linux? && Hardware::CPU.arm?
-    bin.install "wishlist-pulse" if OS.linux? && Hardware::CPU.intel?
+    if OS.mac? && Hardware::CPU.arm?
+      bin.install "wishlist-pulse"
+    end
+    if OS.mac? && Hardware::CPU.intel?
+      bin.install "wishlist-pulse"
+    end
+    if OS.linux? && Hardware::CPU.arm?
+      bin.install "wishlist-pulse"
+    end
+    if OS.linux? && Hardware::CPU.intel?
+      bin.install "wishlist-pulse"
+    end
 
     install_binary_aliases!
 
