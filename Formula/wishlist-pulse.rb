@@ -1,25 +1,25 @@
 class WishlistPulse < Formula
   desc "Steam Wishlist monitoring bot with web dashboard, Telegram and Discord notifications"
   homepage "https://github.com/hortopan/steam-wishlist-pulse"
-  version "0.1.15"
+  version "0.1.16"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/hortopan/steam-wishlist-pulse/releases/download/v0.1.15/wishlist-pulse-aarch64-apple-darwin.tar.xz"
-      sha256 "c4df9487ea62dcc1dec53d316dbf38185ba21b150e26ba3b6816dd717d4f4cb7"
+      url "https://github.com/hortopan/steam-wishlist-pulse/releases/download/v0.1.16/wishlist-pulse-aarch64-apple-darwin.tar.xz"
+      sha256 "53580e9631b632304747916ad2e9cc40dad69cb3dbbfdf586143b81242b0c095"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/hortopan/steam-wishlist-pulse/releases/download/v0.1.15/wishlist-pulse-x86_64-apple-darwin.tar.xz"
-      sha256 "511cfb956df4dc6db1d24d4114d79ac89ef2efc4f4c66ab7582ee63a49b509f4"
+      url "https://github.com/hortopan/steam-wishlist-pulse/releases/download/v0.1.16/wishlist-pulse-x86_64-apple-darwin.tar.xz"
+      sha256 "ecf6642cf5cb3627d59dd6dd75824ffb5c1e87556969116aab82f6802f60ce5f"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/hortopan/steam-wishlist-pulse/releases/download/v0.1.15/wishlist-pulse-aarch64-unknown-linux-musl.tar.xz"
-      sha256 "16e26e209c1e52766dafa22b6e30ab19e736905713b2dbfc9b6fd1d8923dc2cc"
+      url "https://github.com/hortopan/steam-wishlist-pulse/releases/download/v0.1.16/wishlist-pulse-aarch64-unknown-linux-musl.tar.xz"
+      sha256 "5433558e0f98db1dddca31a76339d8f0ecf5ee58730684c5a017f4be373fff6a"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/hortopan/steam-wishlist-pulse/releases/download/v0.1.15/wishlist-pulse-x86_64-unknown-linux-musl.tar.xz"
-      sha256 "155bdd4ccb53ffe25f41f223261e1955f8a833f102418ca4e020393b6b8787a3"
+      url "https://github.com/hortopan/steam-wishlist-pulse/releases/download/v0.1.16/wishlist-pulse-x86_64-unknown-linux-musl.tar.xz"
+      sha256 "597d119609da28680cf4ae5244124c30ead84233d836520337e9dea461bf280d"
     end
   end
 
